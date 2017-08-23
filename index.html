@@ -79,36 +79,110 @@
                         <!-- START OF FEATURED SECTION -->
 
                         <div class="item featured text-center">
-                            <h3 class="title">Image Classifier</h3>
+                            <h3 class="title">Image Recognition</h3>
                             <!--<p class="summary">No summary for now</p>-->
                             <div class="featured-image">
-                                <!--<img class="img-responsive" src="assets/images/projects/dokodemo.png" alt="featured project" />-->
-                                <!--<div class="ribbon">-->
-                                <!--<div class="text">Upcoming</div>-->
-                                <!--</div>-->
+                                <img class="img-responsive" src="assets/images/projects/ImageClassifierWebClient.png" alt="featured project" />
+                                <div class="ribbon">
+                                <div class="text">Upcoming</div>
+                                </div>
                             </div>
 
                             <div class="desc text-left">
                                 <p style="text-align:center;">
-                                    This is an application that uses Tensorflow in order to classify images. You simply snap a picture
-                                    and the application will spit out what it thinks it's in the image.
-
-                                </p>
-                                <p style="text-align:center;">
-                                    This application is useful for recognizing animal pictures. Great for bird watching or when you
-                                    catch a fish you can determine the type of fish you caught.
+                                    This application uses tensorflow's deep neural network called the Inception model v3 for image classification
+                                    The application currently consists of a Web Client, which uses a RESTFUL API that does the classification,
+                                    and gives out the top 10 guesses of what it thinks the image is.
                                 </p>
                                 <p><a class="more-link"
                                       href="https://github.com/jesuszarate/ImageClassifierServer"
-                                      target="_blank"><i class="fa fa-external-link"></i> Find out more about the server</a></p>
+                                      target="_blank"><i class="fa fa-external-link"></i> Find out more about the server</a>
+                                </p>
                                 <p><a class="more-link"
                                       href="https://github.com/jesuszarate/ImageClassifierClient"
-                                      target="_blank"><i class="fa fa-external-link"></i> Find out more about the Web Client</a></p>
+                                      target="_blank"><i class="fa fa-external-link"></i> Find out more about the Web
+                                    Client</a></p>
                             </div><!--//desc-->
                         </div><!--//item-->
                         <hr class="divider"/>
 
                         <!-- END OF FEATURE SECTION -->
+
+
+                        <!--HoloLens-->
+                        <div class="item row">
+                            <div class="col-md-12 col-lg-12 card">
+
+                                <div class="card-media">
+                                    <iframe class="col-md-4 col-sm-4 col-xs-12 img-responsive"
+                                            src="https://www.youtube.com/embed/PAf70zoWWfc"
+                                            frameborder="0" allowfullscreen></iframe>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title">HoloPhysics</h3>
+                                        <p>A physics simulator application built for HoloLens</p>
+                                        <!--<p><a class="more-link" href="https://github.com/" target="_blank"><i-->
+                                        <!--class="fa fa-external-link"></i> Find out more</a></p>-->
+                                    </div><!--//desc-->
+                                </div>
+
+                                <div class="card-subtext col-md-12 col-sm-12 col-xs-12">
+                                    <span><strong>Language: </strong></span>
+                                    <span class="label label-warning">C#</span>
+                                    <br>
+                                    <span><strong>IDEA/Game Engine: </strong></span>
+                                    <span class="label label-info">Visual Studio</span>
+                                    <span class="label label-info">Unity</span>
+                                    <br>
+                                    <span><strong>OS: </strong></span>
+                                    <span class="label label-danger">Windows</span>
+                                    <br>
+                                    <span><strong>Other Technologies: </strong></span>
+                                    <span class="label label-success">HoloLens</span>
+                                    <span class="label label-success">HoloLens Emulator</span>
+                                    <span class="label label-success">Git</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Movie Classifier-->
+                        <div class="item row">
+                            <div class="col-md-12 col-lg-12 card">
+
+                                <div class="card-media">
+                                    <img class="col-md-4 col-sm-4 col-xs-12 img-responsive"
+                                         src="assets/images/projects/MovieGenreClassifier.png" alt="Movie Genre Classifier" />
+
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title">Movie Genre Classifier</h3>
+                                        <p>Classified movie genres using movie summaries</p>
+                                        <p>
+                                            <a class="more-link"
+                                              href="https://github.com/bkimmig/data-mining-project"
+                                              target="_blank">
+                                            <i class="fa fa-external-link"></i> Find out more</a></p>
+                                    </div><!--//desc-->
+                                </div>
+
+                                <div class="card-subtext col-md-12 col-sm-12 col-xs-12">
+                                    <span><strong>Language/s: </strong></span>
+                                    <span class="label label-warning">Python</span>
+                                    <br>
+                                    <span><strong>IDEA: </strong></span>
+                                    <span class="label label-info">IntelliJ</span>
+                                    <br>
+                                    <span><strong>OS: </strong></span>
+                                    <span class="label label-danger">Mac</span>
+                                    <br>
+                                    <span><strong>Other Technologies/Libraries: </strong></span>
+                                    <span class="label label-success">Jupyter</span>
+                                    <span class="label label-success">Numpy</span>
+                                    <span class="label label-success">Kaggle</span>
+                                    <span class="label label-success">Latex</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+
 
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -119,24 +193,29 @@
                     <h2 class="heading">Work Experience</h2>
                     <div class="content">
                         <div class="item">
-                            <h3 class="title">Software Engineer Intern - <span class="place"><a href="#">Goldman Sachs</a></span>
+                            <h3 class="title">Software Engineer Intern - <span class="place"><a
+                                    href="#">Goldman Sachs</a></span>
                                 <span class="year">Summer 2017</span></h3>
                             <p>
-                                • Developed a system that automates the calculation of the credit rating and the appetite thresholds for credit limits
+                                • Developed a system that automates the calculation of the credit rating and the
+                                appetite thresholds for credit limits
 
                             </p>
                             <p>
                                 • Reduced the work effort equivalent to 42 person years to less than 20 minutes.
                             </p>
                             <p>
-                                • Built a full test suite as well as regression tool that allowed users to pin point errors with the data.
+                                • Built a full test suite as well as regression tool that allowed users to pin point
+                                errors with the data.
                             </p>
                         </div>
                         <div class="item">
-                            <h3 class="title">Software Engineer Intern - <span class="place"><a href="#">Goldman Sachs</a></span>
+                            <h3 class="title">Software Engineer Intern - <span class="place"><a
+                                    href="#">Goldman Sachs</a></span>
                                 <span class="year">Summer 2016</span></h3>
                             <p>
-                                • Developed a web tool that allowed users to be more precise and efficient by automating the system and reducing the
+                                • Developed a web tool that allowed users to be more precise and efficient by automating
+                                the system and reducing the
                                 amount of clicks from 7 clicks to only 2 clicks.
 
                             </p>
@@ -146,7 +225,8 @@
                             </p>
                         </div>
                         <div class="item">
-                            <h3 class="title">Software Engineer Intern - <span class="place"><a href="#">Goldman Sachs</a></span>
+                            <h3 class="title">Software Engineer Intern - <span class="place"><a
+                                    href="#">Goldman Sachs</a></span>
                                 <span class="year">Summer 2015</span></h3>
                             <p>
                                 • Designed and implemented REST services to detect discreptancies in the credit risk
@@ -168,7 +248,8 @@
 
                             </p>
                             <p>
-                                • The application used dragging and dropping to remap keys, relocate and to resize the keys,
+                                • The application used dragging and dropping to remap keys, relocate and to resize the
+                                keys,
                                 which decreased the time a user spent making a keyboard and increased the productivity
 
                             </p>
@@ -198,6 +279,23 @@
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </aside><!--//aside-->
+
+            <aside class="education aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Education</h2>
+                    <div class="content">
+                        <div class="item">
+                            <h3 class="title"><i class="fa fa-graduation-cap"></i> MS Computer Science</h3>
+                            <h4 class="university">University of University <span
+                                    class="year">May 2018</span></h4>
+                        </div><!--//item-->
+                        <div class="item">
+                            <h3 class="title"><i class="fa fa-graduation-cap"></i> BS Computer Science</h3>
+                            <h4 class="university">University of Utah <span class="year">(2012-2017)</span></h4>
+                        </div><!--//item-->
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
 
             <aside class="skills aside section">
                 <div class="section-inner">
@@ -230,13 +328,6 @@
                                 </div><!--//level-bar-->
                             </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">Django<span class="level-label">Intermediate</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="80%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
 
                             <div class="item">
                                 <h3 class="level-title">Django<span class="level-label">Intermediate</span></h3>
@@ -263,6 +354,14 @@
                                 </div><!--//level-bar-->
                             </div><!--//item-->
 
+                            <div class="item">
+                                <h3 class="level-title">C/C++<span class="level-label">Intermediate</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="80%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
 
                             <div class="item">
                                 <h3 class="level-title">HTML, CSS, JavaScript, Angular2<span
@@ -280,6 +379,8 @@
                                     </div>
                                 </div><!--//level-bar-->
                             </div><!--//item-->
+
+
 
                             <div class="item">
                                 <h3 class="level-title">Jenkins<span class="level-label">Intermediate</span></h3>
@@ -303,22 +404,6 @@
                 </div><!--//section-inner-->
             </aside><!--//section-->
 
-            <aside class="education aside section">
-                <div class="section-inner">
-                    <h2 class="heading">Education</h2>
-                    <div class="content">
-                        <div class="item">
-                            <h3 class="title"><i class="fa fa-graduation-cap"></i> MS Computer Science</h3>
-                            <h4 class="university">University of University <span
-                                    class="year">May 2018</span></h4>
-                        </div><!--//item-->
-                        <div class="item">
-                            <h3 class="title"><i class="fa fa-graduation-cap"></i> BS Computer Science</h3>
-                            <h4 class="university">University of Utah <span class="year">(2012-2017)</span></h4>
-                        </div><!--//item-->
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </aside><!--//section-->
 
             <aside class="languages aside section">
                 <div class="section-inner">
@@ -348,6 +433,7 @@
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </aside><!--//section-->
+
 
             <!--<aside class="list music aside section">-->
             <!--<div class="section-inner">-->
