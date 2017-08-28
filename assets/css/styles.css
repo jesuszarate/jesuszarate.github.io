@@ -404,6 +404,7 @@ iframe {
 .info .fa {
     margin-right: 15px;
     color: #ccd1d6;
+
 }
 
 .info .fa.fa-envelope-o {
@@ -497,6 +498,7 @@ iframe {
 /* Education section */
 .education .item {
     margin-bottom: 30px;
+
 }
 
 .education .item:last-child {
@@ -755,6 +757,7 @@ iframe {
     color: #0c5460;
     background-color: #d1ecf1;
     border-color: #bee5eb;
+
 }
 
 .alert-info hr {
@@ -821,12 +824,15 @@ iframe {
     color: #040505;
 }
 
-.row-section{
-    display:flex;
+
+
+.info-height{
+    height: 250px;
+}
+
+.info-right{
+    padding: 0%;
+    margin-bottom: 10px;
 
 }
 
-.col-section{
-    flex: 1;
-
-}
