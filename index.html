@@ -39,7 +39,6 @@
     <![endif]-->
 
 </head>
-
 <body>
 <!-- ******HEADER****** -->
 <header class="header">
@@ -56,30 +55,42 @@
     </div><!--//container-->
 </header><!--//header-->
 
+
+<nav class="navbar navbar-default ">
+    <div class="container">
+        <div class="navbar-header">
+            <!--<a class="navbar-brand" href="#">-->
+                <!--&lt;!&ndash;<img alt="Brand" src="{% static 'img/logo.png' %}" height="25" width="25">&ndash;&gt;-->
+                <!--<h1>Jesus</h1>-->
+            <!--</a>-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="/">Team Jarvis</a>-->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav " >
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <div class="container sections-wrapper">
     <div class="row">
-        <!--<row>-->
-        <!--<aside class="education aside section col-md-6">-->
-        <!--<div class="section-inner">-->
-        <!--<h2 class="heading">Education</h2>-->
-        <!--<div class="content">-->
-        <!--<div class="item">-->
-        <!--<h3 class="title"><i class="fa fa-graduation-cap"></i> MS Computer Science</h3>-->
-        <!--<h4 class="university">University of University <span-->
-        <!--class="year">May 2018</span></h4>-->
-        <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
-        <!--<div class="item">-->
-        <!--<h3 class="title"><i class="fa fa-graduation-cap"></i> BS Computer Science</h3>-->
-        <!--<h4 class="university">University of Utah <span class="year">(2012-2017)</span></h4>-->
-        <!--</div>&lt;!&ndash;//item&ndash;&gt;-->
-        <!--</div>&lt;!&ndash;//content&ndash;&gt;-->
-        <!--</div>&lt;!&ndash;//section-inner&ndash;&gt;-->
-        <!--</aside>&lt;!&ndash;//section&ndash;&gt;-->
-        <!--</row>-->
+
         <div class="primary col-md-8 col-sm-12 col-xs-12">
 
             <section class="row section">
-                <section class="about col-md-12 col-sm-12 col-xs-12">
+                <section id="about" class="about col-md-12 col-sm-12 col-xs-12">
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
@@ -96,7 +107,7 @@
                 <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <!--<div class="info aside info-height info-right section-inner col-md-6 col-sm-12 col-xs-12">-->
-                        <div class="info section-inner info-height info-right ">
+                        <div id="contact" class="info section-inner info-height info-right ">
                             <h2 class="heading">Contact Me</h2>
                             <div class="content">
                                 <ul class="list-unstyled">
@@ -136,7 +147,7 @@
 
 
             <section class="latest section">
-                <div class="section-inner">
+                <div id="projects" class="section-inner">
                     <h2 class="heading">Latest Projects</h2>
                     <div class="content">
 
@@ -415,7 +426,7 @@
                 </div><!--//section-inner-->
             </section><!--//section-->
 
-            <section class="experience section">
+            <section id="experience" class="experience section">
                 <div class="section-inner">
                     <h2 class="heading">Work Experience</h2>
                     <div class="content">
@@ -493,7 +504,7 @@
 
         <div class="secondary col-md-4 col-sm-12 col-xs-12">
 
-            <aside class="skills aside section">
+            <aside id="skills"class="skills aside section">
                 <div class="section-inner">
                     <h2 class="heading">Technical Skills</h2>
                     <div class="content">
