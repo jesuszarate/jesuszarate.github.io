@@ -456,7 +456,7 @@ iframe {
 
 .skills .skillset .level-bar-inner {
     height: 15px;
-    background: #66cb8c;
+    background: rgb(19, 132, 142);
 }
 
 /* Testimonials section */
@@ -541,7 +541,8 @@ iframe {
 }
 
 .languages .item .fa {
-    color: #79d19a;
+    color: rgb(19, 132, 142);
+
 }
 
 /* Blog Section */
