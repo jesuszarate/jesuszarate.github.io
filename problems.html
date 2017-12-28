@@ -622,6 +622,107 @@
         </div>
     </div>
 
+    <div class="row">
+
+        <div class="primary col-md-12 col-sm-12 col-xs-12">
+
+            <section class="row section">
+                <section class="about col-md-12 col-sm-12 col-xs-12" data-toggle="collapse" href="#problem4"
+                         aria-controls="problem4">
+                    <div class="section-inner">
+                        <h2 class="heading">Median of two sorted arrays</h2>
+                        <div class="content collapse" id="problem4">
+                            <p>
+
+                                <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40</pre></td><td><pre style="margin: 0; line-height: 125%">    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">main</span><span style="color: #333333">(</span>String<span style="color: #333333">[]</span> a<span style="color: #333333">){</span>
+
+        <span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">[]</span> nums1 <span style="color: #333333">=</span> <span style="color: #333333">{};</span>
+        <span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">[]</span> nums2 <span style="color: #333333">=</span> <span style="color: #333333">{</span><span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">4</span><span style="color: #333333">};</span>
+
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span>findMedianSortedArrays<span style="color: #333333">(</span>nums1<span style="color: #333333">,</span> nums2<span style="color: #333333">));</span>
+    <span style="color: #333333">}</span>
+
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">double</span> <span style="color: #0066BB; font-weight: bold">findMedianSortedArrays</span><span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">[]</span> nums1<span style="color: #333333">,</span> <span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">[]</span> nums2<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+
+        <span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(</span>nums2<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+            <span style="color: #333399; font-weight: bold">int</span> mid <span style="color: #333333">=</span> <span style="color: #333333">(</span>nums1<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">)/</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">;</span>
+            <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0066BB; font-weight: bold">findMiddle</span><span style="color: #333333">(</span>nums1<span style="color: #333333">,</span> nums1<span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">,</span> mid<span style="color: #333333">,</span> mid <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">,</span> nums1<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">);</span>
+        <span style="color: #333333">}</span>
+        <span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(</span>nums1<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+            <span style="color: #333399; font-weight: bold">int</span> mid <span style="color: #333333">=</span> <span style="color: #333333">(</span>nums2<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">)/</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">;</span>
+            <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0066BB; font-weight: bold">findMiddle</span><span style="color: #333333">(</span>nums2<span style="color: #333333">,</span> nums2<span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">,</span> mid<span style="color: #333333">,</span> mid <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">,</span> nums2<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">);</span>
+        <span style="color: #333333">}</span>
+
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #0066BB; font-weight: bold">findMiddle</span><span style="color: #333333">(</span>nums1<span style="color: #333333">,</span> nums2<span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">,</span> nums1<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">,</span> nums2<span style="color: #333333">.</span><span style="color: #0000CC">length</span> <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">double</span> <span style="color: #0066BB; font-weight: bold">findMiddle</span><span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">[]</span> nums1<span style="color: #333333">,</span> <span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">[]</span> nums2<span style="color: #333333">,</span> <span style="color: #333399; font-weight: bold">int</span> s1<span style="color: #333333">,</span> <span style="color: #333399; font-weight: bold">int</span> e1<span style="color: #333333">,</span> <span style="color: #333399; font-weight: bold">int</span> s2<span style="color: #333333">,</span> <span style="color: #333399; font-weight: bold">int</span> e2<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+
+        <span style="color: #333399; font-weight: bold">int</span> len1 <span style="color: #333333">=</span> <span style="color: #333333">(</span>e1 <span style="color: #333333">-</span> s1<span style="color: #333333">);</span>
+        <span style="color: #333399; font-weight: bold">int</span> len2 <span style="color: #333333">=</span> <span style="color: #333333">(</span>e2 <span style="color: #333333">-</span> s2<span style="color: #333333">);</span>
+
+        <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>len1 <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">&amp;&amp;</span> len2 <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span> <span style="color: #008800; font-weight: bold">return</span> nums1<span style="color: #333333">[</span>s1<span style="color: #333333">];</span>
+        <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>len2 <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">&amp;&amp;</span> len1 <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span> <span style="color: #008800; font-weight: bold">return</span> nums2<span style="color: #333333">[</span>s2<span style="color: #333333">];</span>
+
+        <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">((</span>len1 <span style="color: #333333">+</span> len2<span style="color: #333333">)</span> <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+            <span style="color: #008800; font-weight: bold">return</span> <span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">double</span><span style="color: #333333">)</span> <span style="color: #333333">(</span>nums1<span style="color: #333333">[</span>s1 <span style="color: #333333">+</span> len1<span style="color: #333333">]</span> <span style="color: #333333">+</span> nums2<span style="color: #333333">[</span>s2<span style="color: #333333">])</span> <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">;</span>
+        <span style="color: #333333">}</span>
+
+        <span style="color: #333399; font-weight: bold">int</span> mid1 <span style="color: #333333">=</span> len1 <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">;</span>
+        <span style="color: #333399; font-weight: bold">int</span> mid2 <span style="color: #333333">=</span> len2 <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">;</span>
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #333333">(</span>findMiddle<span style="color: #333333">(</span>nums1<span style="color: #333333">,</span> nums1<span style="color: #333333">,</span> s1<span style="color: #333333">,</span> mid1<span style="color: #333333">,</span> mid1 <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">,</span> e1<span style="color: #333333">)</span> <span style="color: #333333">+</span>
+                findMiddle<span style="color: #333333">(</span>nums2<span style="color: #333333">,</span> nums2<span style="color: #333333">,</span> s2<span style="color: #333333">,</span> mid2<span style="color: #333333">,</span> mid2 <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">,</span> e2<span style="color: #333333">))</span> <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">;</span>
+
+    <span style="color: #333333">}</span>
+</pre></td></tr></table></div>
+
+
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
 
 </div><!--//content-->
     </div><!--//section-inner-->
