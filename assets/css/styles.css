@@ -542,7 +542,14 @@ iframe {
 
 .languages .item .fa {
     color: rgb(19, 132, 142);
+}
 
+.selected{
+    color: rgb(19, 132, 142);
+}
+
+.unselected{
+    color: #aaa;
 }
 
 /* Blog Section */
